@@ -1,0 +1,13 @@
+button{
+    background-color:rgb(57, 151, 151);
+    color:bisque;
+    font-size: 18px;
+    border-radius: 8px;
+    width:40px;
+    height:70px;
+    margin:auto;
+   
+}
+button:hover{
+    background-color:bisque; 
+    color:rgb(57, 151, 151);}
