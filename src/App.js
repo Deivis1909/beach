@@ -41,12 +41,12 @@ function App() {
       
       <Routes>
         <Route path="/" element={<ListaPraias praia={praia}/>}  />
-        <Route path="/editar" element={<Editar />} />
+        <Route path="/editar" element={<Editar praia={praia} />} />
         <Route path="/cadastro" element={<Cadastro/>} />
         
 
       </Routes>
-      <Button />
+      <Button  />
       </BrowserRouter>
       
      
