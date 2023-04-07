@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import ListaPraias from './components/ListaPraias';
 import Editar from './components/Editar';
-import Cadastro from './components/Cadastro';
+
 import Filtro from './components/Filtro';
 import { useEffect, useState } from 'react';
 import Button from './components/Button';
@@ -42,7 +42,7 @@ function App() {
       <Routes>
         <Route path="/" element={<ListaPraias praia={praia}/>}  />
         <Route path="/editar" element={<Editar praia={praia} />} />
-        <Route path="/cadastro" element={<Cadastro/>} />
+       
         
 
       </Routes>
