@@ -1,5 +1,15 @@
-import "./styles.css"
+
+import "./styles.css";
+
 export default function ListaPraias({praia}){
+
+
+
+   
+
+   
+    
+    
 
 return(
 <div>
@@ -16,6 +26,7 @@ return(
             <th>Nome</th>
             <th>Bairro</th>
             <th>Condicao</th>
+            <th>acessibilidade</th>
             
           </tr>
         </thead>
@@ -25,6 +36,8 @@ return(
               <tr key={p.nome}>
                 <td>{p.bairro}</td>
                 <td>{p.nome}</td>
+                <td className={p.acessivel ? 'green' : 'red'}>{p.acessivel? 'SIM' : 'NÃO'}</td>
+                <td className={p.acessibilidade ? 'green' : 'red'}>{p.acessibilidade? 'SIM' : 'NÃO'}</td>
                 
               </tr>
             )

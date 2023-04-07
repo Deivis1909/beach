@@ -1,23 +1,42 @@
 import "./styles.css"
-export default function Filtro (){
-return(
-<div>
-<h3>  Filtro</h3>
-<form>
-<div>
-      <input type="checkbox" id="scales" name="scales" checked></input>
-      <label htmlFor="scales">Disponivel</label>
-    </div>
+import { useState } from "react";
 
-    <div>
-      <input type="checkbox" id="horns" name="horns"></input>
-      <label htmlFor="horns">Não Disponivel</label>
-    </div>
+
+export default function Filtro ({positivo,negativo,praia}){
+  const [selectedOption, setSelectedOption] = useState(null);
+      
+   // else if({selectedOption} === "i"){
+    
+     // const resultado = praia.filter(p => p.acessivel === false);
+      //setFiltradas(resultado);
+    
+  //} 
+  
+      return(
+          <div>
+           <form>
+    <h3>Praias da ilha da magia</h3>
+    <ul>
+    <li><input type="radio" name="proprias" value="proprias" checked={selectedOption === "p"} onChange={(e) => setSelectedOption(e.target.value)}/>proprias</li>
+        <li><input type="radio" name="improprias" value="improprias" checked={selectedOption === "i"} onChange={(e) => setSelectedOption(e.target.value)}/>improprias</li>
+        
+    </ul>
+    <button id="btn-salvar" type="submit" value='salada' >Filtrar</button>
 </form>
 
-</div>
-
-)
+<p>Opção selecionada: {selectedOption}</p>
 
 
-}
+         </div>
+        )
+
+        
+      
+
+
+      }
+
+    
+
+
+

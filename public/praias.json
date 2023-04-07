@@ -1,7 +1,7 @@
 [
-    {"bairro":"Daniela","nome":"Daniela","acessivel":true 
+    {"bairro":"Daniela","nome":"Daniela","acessivel":false,"acessibilidade":true 
     },
-    {"bairro":"Ingleses","nome":"Ingleses","acessivel":true},
-    {"bairro":"Canasveiras","nome":"Canasvieras","acessivel":true},
-    {"bairro":"Barra da Lagoa","nome":"Barra da Lagoa","acessivel":true}
+    {"bairro":"Ingleses","nome":"Ingleses","acessivel":true,"acessibilidade":false},
+    {"bairro":"Canasveiras","nome":"Canasvieras","acessivel":true,"acessibilidade":false},
+    {"bairro":"Barra da Lagoa","nome":"Barra da Lagoa","acessivel":true,"acessibilidade":false}
 ]
