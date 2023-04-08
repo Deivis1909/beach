@@ -1,15 +1,11 @@
 
 import "./styles.css";
 
-export default function ListaPraias({praia}){
+export default function ListaPraias({praia,editarPraia}){
 
+  
+  
 
-
-   
-
-   
-    
-    
 
 return(
 <div>
@@ -32,7 +28,7 @@ return(
         </thead>
         <tbody>
           {
-            praia.map(p => 
+             praia.map(p => 
               <tr key={p.nome}>
                 <td>{p.bairro}</td>
                 <td>{p.nome}</td>
