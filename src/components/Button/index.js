@@ -1,4 +1,5 @@
 
+import CadastroNovaPraia from "../CadastroNovaPraia"
 import "./styles.css" 
 export default function Button ({onClick}){
     return(

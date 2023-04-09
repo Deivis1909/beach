@@ -11,7 +11,7 @@ import EditarPraia from './components/EditarPraia';
 import Header from './components/Header';
 
 function App() {
-
+  
   const [exibirOutroComponente, setExibirOutroComponente] = useState(false);
   const[praia,setPraia] = useState([]);
 
@@ -38,6 +38,7 @@ function App() {
   function handleClick() {
     setExibirOutroComponente(true);
   }
+  
 
 
   return (
@@ -51,9 +52,10 @@ function App() {
       <Routes>
         <Route path="/" element={<ListaPraias praia={praia} editarPraia={setPraia} />}  />
         <Route path="/editar-praia" element={<EditarPraia praia={praia} editarPraia={setPraia} />}  />
-        <Route path="cadastro-praia/:nome?" element = { 
-              <CadastroNovaPraia praia={praia} />
-            } />
+        <Route path="/cadastro-praia" element={<CadastroNovaPraia praia={praia} editarPraia={setPraia} />}  />
+        
+              
+          
         
         
       </Routes>
@@ -61,6 +63,7 @@ function App() {
       <Button onClick={handleClick} />
       {exibirOutroComponente && <EditarPraia praia={praia} editarPraia={setPraia} />}
       </div>
+      
       </BrowserRouter>
       
       
