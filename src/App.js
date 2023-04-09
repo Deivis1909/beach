@@ -12,6 +12,7 @@ import Header from './components/Header';
 
 function App() {
 
+  const [exibirOutroComponente, setExibirOutroComponente] = useState(false);
   const[praia,setPraia] = useState([]);
 
   useEffect(() => {
@@ -34,6 +35,10 @@ function App() {
     
   }, [])
 
+  function handleClick() {
+    setExibirOutroComponente(true);
+  }
+
 
   return (
     <div className="App">
@@ -52,7 +57,10 @@ function App() {
         
 
       </Routes>
-      <Button  />
+      <div>
+      <Button onClick={handleClick} />
+      {exibirOutroComponente && <EditarPraia praia={praia} editarPraia={setPraia} />}
+      </div>
       </BrowserRouter>
       
      
