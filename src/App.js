@@ -45,7 +45,7 @@ function App() {
 
 
       <BrowserRouter>
-      
+      <Header />
       <Filtro praia = {praia} />
       
       <Routes>
@@ -55,7 +55,7 @@ function App() {
               <CadastroNovaPraia praia={praia} />
             } />
         
-
+        
       </Routes>
       <div>
       <Button onClick={handleClick} />
@@ -63,7 +63,7 @@ function App() {
       </div>
       </BrowserRouter>
       
-     
+      
     </div>
   );
 }
