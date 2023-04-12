@@ -1,3 +1,16 @@
 Body{
   color:rgb(57, 151, 151)
 }
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  
+}
+.botao{
+  justify-items: flex-end;
+}
+
+.conteudo{
+  justify-items: flex-start;
+}

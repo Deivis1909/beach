@@ -1,4 +1,5 @@
 
+
 import "./styles.css";
 
 export default function ListaPraias({praia,editarPraia}){
@@ -40,6 +41,7 @@ return(
           }
         </tbody>
       </table>
+      
     </>
 
          </div>

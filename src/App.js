@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 import Button from './components/Button';
 import CadastroNovaPraia from './components/CadastroNovaPraia';
 import EditarPraia from './components/EditarPraia';
-import Header from './components/Header';
+
 
 function App() {
   
@@ -44,11 +44,12 @@ function App() {
   return (
     <div className="App">
 
-
+      <div className='container'>
       <BrowserRouter>
-      <Header />
-      <Filtro praia = {praia} />
       
+      
+      <Filtro praia = {praia} />
+      <div className='conteudo'>
       <Routes>
         <Route path="/" element={<ListaPraias praia={praia} editarPraia={setPraia} />}  />
         <Route path="/editar-praia" element={<EditarPraia praia={praia} editarPraia={setPraia} />}  />
@@ -59,14 +60,15 @@ function App() {
         
         
       </Routes>
-      <div>
+
+      </div>
+      <div className='botao'>
       <Button onClick={handleClick} />
       {exibirOutroComponente && <EditarPraia praia={praia} editarPraia={setPraia} />}
       </div>
-      
       </BrowserRouter>
       
-      
+      </div>
     </div>
   );
 }
