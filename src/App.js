@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import Button from './components/Button';
 import CadastroNovaPraia from './components/CadastroNovaPraia';
 import EditarPraia from './components/EditarPraia';
+import Header from './components/Header';
 
 
 function App() {
@@ -47,8 +48,8 @@ function App() {
       <div className='container'>
       <BrowserRouter>
       
+      <Header />
       
-      <Filtro praia = {praia} />
       <div className='conteudo'>
       <Routes>
         <Route path="/" element={<ListaPraias praia={praia} editarPraia={setPraia} />}  />

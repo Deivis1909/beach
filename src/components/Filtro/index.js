@@ -2,8 +2,8 @@ import "./styles.css"
 import { useState } from "react";
 
 
-export default function Filtro ({positivo,negativo,praia}){
-  const [selectedOption, setSelectedOption] = useState(null);
+export default function Filtro ({}){
+  const [selectedOption, setSelectedOption] = useState(null)
       
    // else if({selectedOption} === "i"){
     
