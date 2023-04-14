@@ -65,7 +65,7 @@ export default function CadastroNovaPraia({praia,editarPraia}){
           <span className='msg-erro'>{msgErro !== '' ? msgErro : null}</span>
 
         </form>
-        <ListaPraias praia={praia} editarPraia={editarPraia} />
+        
         </footer>
     </section>
     )
