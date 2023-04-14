@@ -58,8 +58,11 @@ function App() {
   return (
     <div className="App">
 
+      
+      <Header />
       <div className='container'>
       <BrowserRouter>
+      
       
       <div>
       <FiltroPraias onChange={setOpcao} />
