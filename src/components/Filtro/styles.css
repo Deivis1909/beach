@@ -1,8 +1,9 @@
-body{
+select .sele{
     background-color: rgb(217, 201, 184);
-    margin-left:60px;
+    color:blue;
+    
 }
-#btn-salvar{
-    height:50px;
-    width: 80px;;
+select{
+    background-color: rgb(217, 201, 184);
+
 }

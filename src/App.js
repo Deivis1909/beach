@@ -9,12 +9,16 @@ import Button from './components/Button';
 import CadastroNovaPraia from './components/CadastroNovaPraia';
 import EditarPraia from './components/EditarPraia';
 import Header from './components/Header';
+import FiltroPraias from './components/Filtro';
 
 
 function App() {
   
   const [exibirOutroComponente, setExibirOutroComponente] = useState(false);
   const[praia,setPraia] = useState([]);
+  const [opcao, setOpcao] = useState('');
+  const [praiasFiltradas, setPraiasFiltradas] = useState([]);
+
 
   useEffect(() => {
    
@@ -39,6 +43,15 @@ function App() {
   function handleClick() {
     setExibirOutroComponente(true);
   }
+
+  
+  useEffect(() => {
+    if (opcao) {
+      const filtro = opcao === 'propria' ? true : false;
+      const praias = praia.filter((praia) => praia.acessivel === filtro);
+      setPraiasFiltradas(praias);
+    }
+  }, [opcao]);
   
 
 
@@ -48,7 +61,14 @@ function App() {
       <div className='container'>
       <BrowserRouter>
       
-      <Header />
+      <div>
+      <FiltroPraias onChange={setOpcao} />
+      {praiasFiltradas.length > 0 ? (
+        <ListaPraias praia={praiasFiltradas} />
+      ) : (
+        <p>Nenhuma praia encontrada.</p>
+      )}
+    </div>
       
       <div className='conteudo'>
       <Routes>

@@ -11,7 +11,7 @@ export default function ListaPraias({praia,editarPraia}){
 return(
 <div>
     
-<header><h1>Lista de Praias Cadastradas</h1></header>
+<header><h1>Lista de Praias </h1></header>
 <div>
             <>
             

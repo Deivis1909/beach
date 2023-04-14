@@ -7,13 +7,13 @@ export default function DeletaPraia( { nome, excluirPraia } ) {
   // }
 
   return (
-    <div className='personagem-container'>
+    <div className='-container'>
      
-      <div className='personagem-info'>
+      <div className='info'>
         <span >{nome}</span>
         
       </div>
-      <div className='personagem-botoes'>
+      <div className='botoes'>
         <button className="btn" onClick={ () => excluirPraia(nome) } >Excluir</button>
       </div>
     </div>

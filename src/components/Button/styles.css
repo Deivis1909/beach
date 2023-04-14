@@ -13,13 +13,7 @@ button:hover{
     background-color:bisque; 
     color:rgb(57, 151, 151);}
 
-.del{
-    height:40px;
-    width:90px;
-    font-size: 22px;
-    display:inline-flex;
-   
-}
+
 .botoes{
     display: flex;
     align-items: center;
