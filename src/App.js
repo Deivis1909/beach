@@ -87,7 +87,10 @@ function App() {
       <Button onClick={handleClick} />
       {exibirOutroComponente && <EditarPraia praia={praia} editarPraia={setPraia} />}
       </div>
+      
       </BrowserRouter>
+      <CadastroNovaPraia praia={praia} editarPraia={setPraia} />
+      
       
       </div>
     </div>

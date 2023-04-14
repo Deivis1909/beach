@@ -4,5 +4,10 @@ body{
 }
 .btn{
     height:50px;
-    width: 80px;;
+    width: 80px;
+}
+.btn-alterar{
+    height:50px;
+    width: 80px;
+
 }

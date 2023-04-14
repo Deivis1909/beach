@@ -1,0 +1,20 @@
+.btn-adicionar{
+    background-color:rgb(57, 151, 151);
+    color:bisque;
+    font-size: 18px;
+    border-radius: 8px;
+    width:100px;
+    height:70px;
+    margin:30px;
+    display:inline-flex;
+   
+}
+.btn-adicionar:hover{
+    background-color:bisque; 
+    color:rgb(57, 151, 151);}
+
+
+.lbt{
+    font-size: 16px;
+    padding:7px;
+}

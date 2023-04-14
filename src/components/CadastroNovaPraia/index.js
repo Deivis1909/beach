@@ -1,5 +1,6 @@
 import { useState,useRef } from "react";
 import ListaPraias from "../ListaPraias";
+import "./styles.css";
 export default function CadastroNovaPraia({praia,editarPraia}){
     const [msgErro, setMsgErro] = useState('');
 
@@ -44,17 +45,18 @@ export default function CadastroNovaPraia({praia,editarPraia}){
   }
     return(
         <section className='cadastro-container'>
+          <footer>
 
         <div className='cadastro-titulo'>Cadastro</div>
-        <form onSubmit={ handleAdicionarPraia } className="form-personagem">
+        <form onSubmit={ handleAdicionarPraia } className="form">
 
           <div className='form-grupo'>
-            <label htmlFor="input-nome">Nome: </label>
-            <input type="text" required id="input-nome" ref={inputNomeRef} placeholder="Informe o nome" />
+            <label class="lbt" htmlFor="input-nome">Nome: </label>
+            <input class="lbt" type="text" required id="input-nome" ref={inputNomeRef} placeholder="Informe o nome" />
           </div>
           <div className='form-grupo'>
-            <label htmlFor="input-bairro">bairro: </label>
-            <input type="text" required id="input-bairro" ref={inputBairroRef} placeholder="Informe o bairro" />
+            <label class="lbt" htmlFor="input-bairro">bairro: </label>
+            <input class="lbt" type="text" required id="input-bairro" ref={inputBairroRef} placeholder="Informe o bairro" />
 
           </div>
           
@@ -64,6 +66,7 @@ export default function CadastroNovaPraia({praia,editarPraia}){
 
         </form>
         <ListaPraias praia={praia} editarPraia={editarPraia} />
+        </footer>
     </section>
     )
 }

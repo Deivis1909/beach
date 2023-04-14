@@ -15,6 +15,8 @@ export default function DeletaPraia( { nome, excluirPraia } ) {
       </div>
       <div className='botoes'>
         <button className="btn" onClick={ () => excluirPraia(nome) } >Excluir</button>
+      
+      <div><button className='btn-alterar'>Alterar</button></div>
       </div>
     </div>
   )
